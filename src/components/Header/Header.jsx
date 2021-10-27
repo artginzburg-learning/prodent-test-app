@@ -12,7 +12,7 @@ export default function Header() {
             <Nav.Link href="#action1">Questions list</Nav.Link>
             <Nav.Link href="#action2">Create new question</Nav.Link>
             <Nav.Link href="#" disabled>
-              Some disabled link
+              Some disabled button
             </Nav.Link>
           </Nav>
           <Form className="d-flex">
