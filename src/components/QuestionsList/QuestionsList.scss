@@ -1,0 +1,15 @@
+.questionslist {
+  max-width: 1793px;
+  margin: 0 auto;
+
+  &__title {
+    margin: 0;
+
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 120%;
+
+    /* Global/08. Dark */
+    color: #343a40;
+  }
+}
