@@ -2,16 +2,8 @@
   "name": "prodent-test-app",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "bootstrap": "^5.1.3",
-    "holderjs": "^2.9.9",
-    "node-sass": "^6.0.1",
-    "react": "^17.0.2",
-    "react-bootstrap": "^2.0.0",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.2"
-  },
+  "homepage": "https://artginzburg-learning.github.io/prodent-test-app/",
+  "repository": "https://github.com/artginzburg-learning/prodent-test-app",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -34,5 +26,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "holderjs": "^2.9.9",
+    "node-sass": "^6.0.1",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.0.0",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.1.2"
   }
 }
