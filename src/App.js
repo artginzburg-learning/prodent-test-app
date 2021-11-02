@@ -36,10 +36,14 @@ const questions = [
     title: 'Failed question',
     description: 'Failed question example',
   },
-  // {
-  //   title: 'Placeholder',
-  //   description: 'Descriptive placeholder.',
-  // },
+  {
+    title: 'Placeholder',
+    description: 'Descriptive placeholder.',
+  },
+  {
+    title: 'Just a question',
+    description: 'For visualising pagination.',
+  },
 ];
 
 export default function App() {
