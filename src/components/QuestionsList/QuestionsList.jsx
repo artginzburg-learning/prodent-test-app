@@ -19,8 +19,23 @@ export default function QuestionsList({ questions }) {
   const firstQuestionIndex = lastQuestionIndex - questionsPerPage;
   const currentQuestions = questions.slice(firstQuestionIndex, lastQuestionIndex);
 
+  const pagesLength = Math.ceil(questions.length / questionsPerPage);
+
+  function handlePageNext() {
+    const nextPage = currentPage + 1;
+    if (nextPage <= pagesLength) {
+      setCurrentPage(nextPage);
+    }
+  }
+  function handlePagePrevious() {
+    const previousPage = currentPage - 1;
+    if (previousPage > 0) {
+      setCurrentPage(previousPage);
+    }
+  }
+
   const pageItems = [];
-  for (let number = 1; number <= Math.ceil(questions.length / questionsPerPage); number++) {
+  for (let number = 1; number <= pagesLength; number++) {
     const isActive = number === currentPage;
     pageItems.push(
       <Pagination.Item
@@ -53,9 +68,9 @@ export default function QuestionsList({ questions }) {
 
       <Container style={{ marginTop: '23px' }} fluid>
         <Pagination>
-          <Pagination.Prev>Previous</Pagination.Prev>
+          <Pagination.Prev onClick={handlePagePrevious}>Previous</Pagination.Prev>
           {pageItems}
-          <Pagination.Next>Next</Pagination.Next>
+          <Pagination.Next onClick={handlePageNext}>Next</Pagination.Next>
         </Pagination>
       </Container>
     </Container>
